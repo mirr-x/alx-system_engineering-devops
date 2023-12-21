@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#Tell the story of passwd
+filep="/etc/passwd"
+while IFS=: read -r user pw uid gid gecos home shell;
+do
+    echo "The user $user is part of the $gid gang, lives in $home and rides $shell. $uid's place is protected by the passcode $pw, more info about the user here: $gecos"
+done < "$filep"
