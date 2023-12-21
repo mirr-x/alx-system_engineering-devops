@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#sort the output of awk: sort it by numerical order then use uniq to find the number of accurrences and then use sort again to reverse the sort from greatest to lowest
+awk '{print $1, $9}' apache-access.log | sort -n | uniq -c | sort -r
