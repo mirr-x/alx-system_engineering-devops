@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
-#script print 12h and 59m
+# echo best school ten times
 
 h=0
-m=0
-while [ $h -lt 12 ] || [ $m -lt 59 ]
+while [ $h -le 12 ]
 do
-    if [ $m -eq 59 ];then
-        ((h++))
-        echo "Hour: " $h
-        ((m = 0))
-    fi
-    ((m++))
-    echo $m
+    echo "Hour: $h"
+    m=1
+    while [ $m -le 59 ]
+    do
+        echo "$m"
+        (( m++ ))
+    done
+    (( h++ ))
 done

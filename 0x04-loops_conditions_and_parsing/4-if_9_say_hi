@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
-#This script say hi when it 9
-
+# echo best school ten times
 i=0
-while [ $i -lt 11 ]
+while [ $i -lt 10 ]
 do
-    echo "Best School"
-    
-    if [ "$i" -eq 9 ]; then
+    if [ $i -eq 9 ]
+    then
         echo "Hi"
     fi
+    echo "Best School"
     ((i++))
 done
