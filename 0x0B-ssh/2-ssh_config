@@ -1,0 +1,8 @@
+# connect to a server 
+
+Host *
+  Port 22
+  User ubuntu
+  HostName 100.25.198.24	
+  IdentityFile ~/.ssh/school
+
